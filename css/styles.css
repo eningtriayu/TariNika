@@ -61,7 +61,7 @@ input{
     padding-bottom: 5%;
 }
 
-.txt-center{
+.text-center{
   text-align: center;
 }
 
@@ -71,3 +71,10 @@ input{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+img {
+  opacity: 0.8;
+}
+
+img:hover {
+  opacity: 1.0;
