@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
+ 
   <head>
+     <!--FAVICON-->
+    <link rel="icon" href="/img/icon.png" type="image/png" sizes="16x16">
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +26,7 @@
     <!--buat slider-->
  
 </head>
-<!--NAVBAR-->
+
 
 
   
@@ -31,11 +34,12 @@
 
 <!--ISI-->
   <body>
+    <!--NAVBAR-->
     <header>
-        <div class="navbar navbar-expand-sm bg-light navbar-light fixed-top" id="navbarHeader">
+        <div class="navbar navbar-expand-sm bg-light navbar-light fixed-top  shadow-sm rounded-bottom" id="navbarHeader">
             <div class="container d-flex justify-content-between">
              
-                    <a id="red" class="navbar-brand"><img src="/img/icon.png" alt="logo" style="width:40px;"> <b>TariNika</b></a>
+                    <a id="red" class="navbar-brand" href="/index.html"><img src="/img/icon.png" alt="logo" style="width:40px;"> <b>TariNika</b></a>
                     <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Bantuan</a>
@@ -51,6 +55,7 @@
             </div>
         </div>
       </header>
+    <!--END NAVBAR-->
   
       <main role="main">
   
@@ -129,269 +134,277 @@
 
           <div class="container">
             <div class="row">
-                <!-- BEGIN FILTERS -->
-          <div class="col-md-3">
-            <h2 class="grid-title"><i class="fa fa-filter"></i> Filters</h2>
-            <hr>
-            <br>
-            <!-- BEGIN FILTER BY CATEGORY -->
-              <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-              <label class="form-check-label" for="flexCheckChecked">
-                Bisa refund
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-              <label class="form-check-label" for="flexCheckChecked">
-                Bisa reschedule
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Sanggar Rekomendasi
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
-              <label class="form-check-label" for="flexCheckDefault">
-                Sanggar mitra
-              </label>
-            </div>
-            <!-- END FILTER BY CATEGORY -->
-            
-            <div class="padding"></div>
-            
-            <!-- BEGIN FILTER BY LOCATION -->
-            <br>
-            <h4>Lokasi:</h4>
-            
-            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Cari lokasi pertunjukan...">
-            <datalist id="datalistOptions">
-              <option value="Bali">
-              <option value="Aceh">
-              <option value="Jawa Barat">
-              <option value="Jawa Timur">
-              <option value="Jakarta">
-            </datalist>
-
-
-            <!-- BEGIN FILTER BY DATE -->
-            <br>
-            <h4>Tanggal:</h4>
-            From
-            <div class="form-group row">
-              <div class="col-md-10">
-                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-              </div>
-            </div>
-           
-            To
-            <div class="form-group row">
-              <div class="col-md-10">
-                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-              </div>
-            </div>
-            <!-- END FILTER BY DATE -->
-            
-            
-            <!-- BEGIN FILTER BY PRICE -->
-            <br>
-            
-            <h4>Harga:</h4>
-            <form>
-              Mulai
-              <div class="form-row col-md-8">
-                <div class="col input-group mb-3">
-                  <span class="input-group-text">Rp.</span>
-                  <input type="text" class="form-control" placeholder="0">
+                    <!-- BEGIN FILTERS -->
+              <div class="col-md-3">
+                <h2 class="grid-title"><i class="fa fa-filter"></i> Filters</h2>
+                <hr>
+                <br>
+                <!-- BEGIN FILTER BY CATEGORY -->
+                
+                  <div class="form-check ">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Bisa refund
+                  </label>
                 </div>
-              </div>
-              Sampai
-                <div class="form-row col-md-8">
-                <div class="col input-group mb-3">
-                  <span class="input-group-text">Rp.</span>
-                  <input type="text" class="form-control" placeholder="1000.000" >
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Bisa reschedule
+                  </label>
                 </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Sanggar Rekomendasi
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" >
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Sanggar mitra
+                  </label>
+                </div>
+                <!-- END FILTER BY CATEGORY -->
+                
+                <div class="padding"></div>
+                
+                <!-- BEGIN FILTER BY LOCATION -->
+                <br>
+                <h4>Lokasi:</h4>
+                <div class="form-group row">
+                  <div class="col-md-9">
+                      <input class="form-control col-md-8" list="datalistOptions" id="exampleDataList" placeholder="Masukkan lokasi...">
+                      <datalist id="datalistOptions">
+                        <option value="Bali">
+                        <option value="Aceh">
+                        <option value="Jawa Barat">
+                        <option value="Jawa Timur">
+                        <option value="Jakarta">
+                      </datalist>
+                    </div>
               </div>
 
-           
-         
-
+                <!-- BEGIN FILTER BY DATE -->
+                <br>
+                <h4>Tanggal:</h4>
+                From
+                <div class="form-group row mb-2">
+                  <div class="col-md-9">
+                    <input class="mt-1 form-control" type="date" value="2021-01-01" id="example-date-input">
+                  </div>
+                </div>
+                
+                To
+                <div class="form-group row">
+                  <div class="col-md-9">
+                    <input class="mt-1 form-control" type="date" value="2022-12-31" id="example-date-input">
+                  </div>
+                </div>
+                <!-- END FILTER BY DATE -->
+                
+                
+                <!-- BEGIN FILTER BY PRICE -->
+                <br>
+                
+                <h4>Harga:</h4>
+                <form>
+                  Mulai
+                  <div class="form-row col-md-9">
+                    <div class="col input-group mb-3">
+                      <span class="input-group-text">Rp.</span>
+                      <input type="text" class="form-control" placeholder="0">
+                    </div>
+                  </div>
+                    Sampai
+                  <div class="form-row col-md-9">
+                    <div class="col input-group mb-3">
+                      <span class="input-group-text">Rp.</span>
+                      <input type="text" class="form-control" placeholder="1000.000" >
+                    </div>
+                  </div>
+                  <br>
+                  <input class="btn btn-lg btn-outline-danger col-md-9" type="submit" value="Gunakan filter">
             
-            <!-- END FILTER BY PRICE -->
-          
-          </div>
-          
 
-          <!-- END FILTERS -->
-
-          <!--BEGIN GALERI TIKET-->
-          <div class="col-md-9">
-            <div class=row>
-              <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
-                  <div class="card-body">
-                    <h3>Tari Saman</h3>
-                    <p class="card-text">Gedung Kesenian TMII Jakarta</p>
-                    <small class="card-text">15 Jun 21 - 15 Aug 21 </p>
-                      <br>
-                    <div class="d-flex justify-content-between align-items-center">
-                     <h5 style="color: crimson;">Rp 50.000</h5>
-                      <small class="text-success">Tiket tersedia</small>
-                    </div>
-                  </div>
-                </div>
-              </div><div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
-                  <div class="card-body">
-                    <h3>Tari Saman</h3>
-                    <p class="card-text">Gedung Kesenian TMII Jakarta</p>
-                    <small class="card-text">15 Jun 21 - 15 Aug 21 </p>
-                      <br>
-                    <div class="d-flex justify-content-between align-items-center">
-                     <h5 style="color: crimson;">Rp 50.000</h5>
-                      <small class="text-success">Tiket tersedia</small>
-                    </div>
-                  </div>
-                </div>
-              </div><div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
-                  <div class="card-body">
-                    <h3>Tari Saman</h3>
-                    <p class="card-text">Gedung Kesenian TMII Jakarta</p>
-                    <small class="card-text">15 Jun 21 - 15 Aug 21 </p>
-                      <br>
-                    <div class="d-flex justify-content-between align-items-center">
-                     <h5 style="color: crimson;">Rp 50.000</h5>
-                      <small class="text-success">Tiket tersedia</small>
-                    </div>
-                  </div>
-                </div>
-              </div><div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
-                  <div class="card-body">
-                    <h3>Tari Saman</h3>
-                    <p class="card-text">Gedung Kesenian TMII Jakarta</p>
-                    <small class="card-text">15 Jun 21 - 15 Aug 21 </p>
-                      <br>
-                    <div class="d-flex justify-content-between align-items-center">
-                     <h5 style="color: crimson;">Rp 50.000</h5>
-                      <small class="text-success">Tiket tersedia</small>
-                    </div>
-                  </div>
-                </div>
-              </div><div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
-                  <div class="card-body">
-                    <h3>Tari Saman</h3>
-                    <p class="card-text">Gedung Kesenian TMII Jakarta</p>
-                    <small class="card-text">15 Jun 21 - 15 Aug 21 </p>
-                      <br>
-                    <div class="d-flex justify-content-between align-items-center">
-                     <h5 style="color: crimson;">Rp 50.000</h5>
-                      <small class="text-success">Tiket tersedia</small>
-                    </div>
-                  </div>
-                </div>
-              </div><div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
-                  <div class="card-body">
-                    <h3>Tari Saman</h3>
-                    <p class="card-text">Gedung Kesenian TMII Jakarta</p>
-                    <small class="card-text">15 Jun 21 - 15 Aug 21 </p>
-                      <br>
-                    <div class="d-flex justify-content-between align-items-center">
-                     <h5 style="color: crimson;">Rp 50.000</h5>
-                      <small class="text-success">Tiket tersedia</small>
-                    </div>
-                  </div>
-                </div>
-              </div><div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
-                  <div class="card-body">
-                    <h3>Tari Saman</h3>
-                    <p class="card-text">Gedung Kesenian TMII Jakarta</p>
-                    <small class="card-text">15 Jun 21 - 15 Aug 21 </p>
-                      <br>
-                    <div class="d-flex justify-content-between align-items-center">
-                     <h5 style="color: crimson;">Rp 50.000</h5>
-                      <small class="text-success">Tiket tersedia</small>
-                    </div>
-                  </div>
-                </div>
-              </div><div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
-                  <div class="card-body">
-                    <h3>Tari Saman</h3>
-                    <p class="card-text">Gedung Kesenian TMII Jakarta</p>
-                    <small class="card-text">15 Jun 21 - 15 Aug 21 </p>
-                      <br>
-                    <div class="d-flex justify-content-between align-items-center">
-                     <h5 style="color: crimson;">Rp 50.000</h5>
-                      <small class="text-success">Tiket tersedia</small>
-                    </div>
-                  </div>
-                </div>
-              </div><div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
-                  <div class="card-body">
-                    <h3>Tari Saman</h3>
-                    <p class="card-text">Gedung Kesenian TMII Jakarta</p>
-                    <small class="card-text">15 Jun 21 - 15 Aug 21 </p>
-                      <br>
-                    <div class="d-flex justify-content-between align-items-center">
-                     <h5 style="color: crimson;">Rp 50.000</h5>
-                      <small class="text-success">Tiket tersedia</small>
-                    </div>
-                  </div>
-                </div>
-              </div><div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
-                  <div class="card-body">
-                    <h3>Tari Saman</h3>
-                    <p class="card-text">Gedung Kesenian TMII Jakarta</p>
-                    <small class="card-text">15 Jun 21 - 15 Aug 21 </p>
-                      <br>
-                    <div class="d-flex justify-content-between align-items-center">
-                     <h5 style="color: crimson;">Rp 50.000</h5>
-                      <small class="text-success">Tiket tersedia</small>
-                    </div>
-                  </div>
-                </div>
-              </div><div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
-                  <div class="card-body">
-                    <h3>Tari Saman</h3>
-                    <p class="card-text">Gedung Kesenian TMII Jakarta</p>
-                    <small class="card-text">15 Jun 21 - 15 Aug 21 </p>
-                      <br>
-                    <div class="d-flex justify-content-between align-items-center">
-                     <h5 style="color: crimson;">Rp 50.000</h5>
-                      <small class="text-success">Tiket tersedia</small>
-                    </div>
-                  </div>
-                </div>
+                
+                <!-- END FILTER BY PRICE -->
               </div>
               
+              <!-- END FILTERS -->
 
+             <!--DISPLAY TIKET (SECTION KANAN)-->
+              <div class="col-md-9 mt-5">
+                 <!--BEGIN GALERI TIKET-->
+                <div class=row>
+               
+                  <div class="col-md-4">
+                    <div onclick="location.href='/detailtiket.html';" style="cursor: pointer;" class="card mb-4 box-shadow" >
+                      <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
+                      <div class="card-body">
+                        <h3>Tari Saman</h3>
+                        <p class="card-text">Gedung Kesenian TMII Jakarta</p>
+                        <small class="card-text">15 Jun 21 - 15 Aug 21 </p></small>
+                          <br>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 style="color: crimson;">Rp 50.000</h5>
+                          <small class="text-success">Tiket tersedia</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-4">
+                    <div onclick="location.href='/detailtiket.html';" style="cursor: pointer;" class="card mb-4 box-shadow" >
+                      <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
+                      <div class="card-body">
+                        <h3>Tari Saman</h3>
+                        <p class="card-text">Gedung Kesenian TMII Jakarta</p>
+                        <small class="card-text">15 Jun 21 - 15 Aug 21 </p></small>
+                          <br>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 style="color: crimson;">Rp 50.000</h5>
+                          <small class="text-success">Tiket tersedia</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div onclick="location.href='/detailtiket.html';" style="cursor: pointer;" class="card mb-4 box-shadow" >
+                      <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
+                      <div class="card-body">
+                        <h3>Tari Saman</h3>
+                        <p class="card-text">Gedung Kesenian TMII Jakarta</p>
+                        <small class="card-text">15 Jun 21 - 15 Aug 21 </p></small>
+                          <br>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 style="color: crimson;">Rp 50.000</h5>
+                          <small class="text-success">Tiket tersedia</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div onclick="location.href='/detailtiket.html';" style="cursor: pointer;" class="card mb-4 box-shadow" >
+                      <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
+                      <div class="card-body">
+                        <h3>Tari Saman</h3>
+                        <p class="card-text">Gedung Kesenian TMII Jakarta</p>
+                        <small class="card-text">15 Jun 21 - 15 Aug 21 </p></small>
+                          <br>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 style="color: crimson;">Rp 50.000</h5>
+                          <small class="text-success">Tiket tersedia</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div onclick="location.href='/detailtiket.html';" style="cursor: pointer;" class="card mb-4 box-shadow" >
+                      <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
+                      <div class="card-body">
+                        <h3>Tari Saman</h3>
+                        <p class="card-text">Gedung Kesenian TMII Jakarta</p>
+                        <small class="card-text">15 Jun 21 - 15 Aug 21 </p></small>
+                          <br>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 style="color: crimson;">Rp 50.000</h5>
+                          <small class="text-success">Tiket tersedia</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div onclick="location.href='/detailtiket.html';" style="cursor: pointer;" class="card mb-4 box-shadow" >
+                      <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
+                      <div class="card-body">
+                        <h3>Tari Saman</h3>
+                        <p class="card-text">Gedung Kesenian TMII Jakarta</p>
+                        <small class="card-text">15 Jun 21 - 15 Aug 21 </p></small>
+                          <br>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 style="color: crimson;">Rp 50.000</h5>
+                          <small class="text-success">Tiket tersedia</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div onclick="location.href='/detailtiket.html';" style="cursor: pointer;" class="card mb-4 box-shadow" >
+                      <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
+                      <div class="card-body">
+                        <h3>Tari Saman</h3>
+                        <p class="card-text">Gedung Kesenian TMII Jakarta</p>
+                        <small class="card-text">15 Jun 21 - 15 Aug 21 </p></small>
+                          <br>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 style="color: crimson;">Rp 50.000</h5>
+                          <small class="text-success">Tiket tersedia</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div onclick="location.href='/detailtiket.html';" style="cursor: pointer;" class="card mb-4 box-shadow" >
+                      <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
+                      <div class="card-body">
+                        <h3>Tari Saman</h3>
+                        <p class="card-text">Gedung Kesenian TMII Jakarta</p>
+                        <small class="card-text">15 Jun 21 - 15 Aug 21 </p></small>
+                          <br>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 style="color: crimson;">Rp 50.000</h5>
+                          <small class="text-success">Tiket tersedia</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div onclick="location.href='/detailtiket.html';" style="cursor: pointer;" class="card mb-4 box-shadow" >
+                      <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="/img/thumbnail/1.jpg" data-holder-rendered="true">
+                      <div class="card-body">
+                        <h3>Tari Saman</h3>
+                        <p class="card-text">Gedung Kesenian TMII Jakarta</p>
+                        <small class="card-text">15 Jun 21 - 15 Aug 21 </p></small>
+                          <br>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <h5 style="color: crimson;">Rp 50.000</h5>
+                          <small class="text-success">Tiket tersedia</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <!--END OF TIKET GALLERY-->
+                  
+                <!--PAGINATION-->
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination pagination-lg text-center ">
+                    <li class="page-item">
+                      <a class="page-link text-danger" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item active"><a class="border-danger bg-danger text-light page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="text-danger page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="text-danger page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="text-danger page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
           </div>
-
-        </div>
-  
       </main>
   
       <footer class="text-light bg-danger p-3">
