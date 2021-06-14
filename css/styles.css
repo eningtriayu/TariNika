@@ -61,6 +61,19 @@ input{
     padding-bottom: 5%;
 }
 
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 
 .bg-cover {
   background-attachment: static;
