@@ -12,7 +12,10 @@
         }
         
         form {
-            border: 3px solid #f1f1f1;
+            border: 2px solid #f1f1f1;
+            width: 50%;
+            text-align: center;
+            border-radius: 20px;
         }
         
         input[type=text],
@@ -26,13 +29,14 @@
         }
         
         button {
-            background-color: #04AA6D;
+            background-color: #FF473E;
             color: white;
             padding: 14px 20px;
             margin: 8px 0;
-            border: none;
+            border: 2px solid #DDDDDD;
+            border-radius: 20px;
             cursor: pointer;
-            width: 100%;
+            width: 40%;
         }
         
         button:hover {
@@ -78,36 +82,40 @@
 </head>
 
 <body>
+    <div class="container">
+        <class class="row">
 
-    <!-- <h2>Login Form</h2> -->
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <form action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <br>
+                        <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+                        <h2>Masuk ke akun</h2>
+                        <br>
+                    </div>
 
-    <form action="/action_page.php" method="post">
-        <div class="imgcontainer">
-            <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
-            <h2>Masuk ke akun</h2>
-        </div>
+                    <div class="container" style="text-align: center;">
+                        <!-- <label for="uname"><b>email</b></label> -->
+                        <input type="text" style="width : 80%; border-radius: 20px;" placeholder="email" name="email" required>
 
-        <div class="container">
-            <!-- <label for="uname"><b>email</b></label> -->
-            <input type="text" placeholder="email" name="email" required>
-
-            <!-- <label for="psw"><b>Password</b></label> -->
-            <input type="password" placeholder="password" name="psw" required>
-
-            <button type="submit">Masuk</button>
-            <button type="submit">Daftar</button>
-
-            <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-        </div>
-
-        <div class="container" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-    </form>
-
+                        <!-- <label for="psw"><b>Password</b></label> -->
+                        <input type="password" style="width : 80%; border-radius: 20px;" placeholder="password" name="psw" required>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <button type="submit">Masuk</button>
+                        <br>
+                        <button type="button" style="  background-color: white; color: #FF473E; padding: 14px 20px; margin: 8px 0; cursor: pointer; width: 40%; border: 2px solid #DDDDDD; border-radius: 20px;">Daftar</button>
+                        <br>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </class>
+    </div>
+    </div>
 </body>
 
 </html>
