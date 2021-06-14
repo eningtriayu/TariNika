@@ -7,10 +7,16 @@
     <!-- Bootstrap & CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/search.css" rel="stylesheet"/>
+
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
+    <!--FONTAWESOME-->
+    <script
+    src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-search-pseudo-elements ></script>
+
     <!--TITLE-->
     <title>TariNika</title>
 </head>
@@ -45,20 +51,51 @@
   
       <main role="main">
   
-        <section class="jumbotron text-center">
+        <section class="jumbotron bg-danger text-light text-center" style="
+        background-image: linear-gradient(to bottom, rgba(92, 6, 6, 0.6) 0%,rgba(133, 11, 11, 0.6) 100%), 
+        url(/img/bg-cv-1.jpg)">
           <div class="container p-atasbawah">
-            <h1 class="jumbotron-heading">Album example</h1>
-            <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+            <h1 class="jumbotron-heading">Selamat datang di Tarinika</h1>
+            <p class="lead text-light">Dapatkan tiketmu dan lestarikan tari indonesia!</p>
             <p>
-              <a href="#" class="btn btn-primary my-2">Main call to action</a>
-              <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+              <div class="row">
+                <div class="col-lg-12 card-margin">
+                    <div class="card search-form">
+                        <div class="card-body p-0">
+                            <form id="search-form">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="row no-gutters">
+                                            <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                  <option>Semua</option>  
+                                                  <option>Nama Tari</option>
+                                                  <option>Lokasi Pertunjukan</option>
+                                                  <option>Tanggal Pertunjukan</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-8 col-md-6 col-sm-12 p-0">
+                                                <input type="text" placeholder="Cari di Tarinika..." class="form-control" id="search" name="search">
+                                            </div>
+                                            <div class="col-lg-1 col-md-3 col-sm-12 p-0">
+                                                <button type="submit" class="btn btn-base">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </p>
           </div>
         </section>
   
         <div class="album py-5 bg-light">
           <div class="container">
-  
             <div class="row">
               <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
