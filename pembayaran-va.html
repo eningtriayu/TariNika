@@ -28,7 +28,7 @@
     </script>
     <!--FAVICON-->
     <link rel="icon" href="/img/icon.png" type="image/png" sizes="16x16">
-    <title>Pembayaran</title>
+    <title>Detail Pembayaran</title>
 
     <style>
         body {
@@ -50,6 +50,30 @@
         
         button:hover {
             opacity: 0.8;
+        }
+        
+        .collapsible {
+            background-color: #777;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+        
+        .active,
+        .collapsible:hover {
+            background-color: #555;
+        }
+        
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
         }
         
         .cancelbtn {
@@ -149,74 +173,67 @@
                 <div class="col-sm-1"></div>
                 <!-- bagian kiri -->
                 <div class="col-sm-6 shadow" style="border: 3px solid #f1f1f1; border-radius: 20px; background-color: white; text-align: center;margin-top: 35px; padding: 30px; margin-bottom: 20px;">
-                    <h4 style="text-align: left;"><b>Virtual Account</b></h4>
+                    <h4 style="text-align: left;"><b>BCA Virtual Account</b></h4>
                     <br><br>
+                    <p style="text-align: left; font-size: 15pt;">Silahkan transfer ke, </p>
+                    <br>
                     <!-- bank BCA -->
                     <div class="row" style="border: 2px solid #f1f1f1; border-radius: 20px; background-color: white; text-align: center; padding: 20px; margin-bottom: 15px;">
-                        <div class="col-sm-8">
+                        <div class="col-sm-9">
                             <h5 style="text-align: left; font-weight: 500; font-size: 18pt;">BCA</h5>
                             <h6 style="text-align: left;  font-weight: 300;">BCA adalah blablablabla</h6>
                         </div>
                         <div class="col-sm-3">
                             <img src="img/bca-syr.jpg" alt="bca-logo" width="110%" style="border-radius: 10px;">
                         </div>
-                        <div class="col-sm-1" style="margin-top: 20px;">
-                            <img src="img/go.png" alt="bca-logo" width="60%">
-                        </div>
                     </div>
-                    <!-- bank BCA Syariah-->
-                    <div class="row" style="border: 2px solid #f1f1f1; border-radius: 20px; background-color: white; text-align: center; padding: 20px; margin-bottom: 15px;">
-                        <div class="col-sm-8">
-                            <h5 style="text-align: left; font-weight: 500; font-size: 18pt;">BCA Syariah</h5>
-                            <h6 style="text-align: left;  font-weight: 300;">BCA Syariah adalah blablablabla</h6>
-                        </div>
-                        <div class="col-sm-3">
-                            <img src="img/bcasyr.png" alt="bca-logo" width="110%">
-                        </div>
-                        <div class="col-sm-1" style="margin-top: 20px;">
-                            <img src="img/go.png" alt="bca-logo" width="60%">
-                        </div>
-                    </div>
-                    <!-- bank BNI -->
-                    <div class="row" style="border: 2px solid #f1f1f1; border-radius: 20px; background-color: white; text-align: center; padding: 20px; margin-bottom: 15px;">
-                        <div class="col-sm-8">
-                            <h5 style="text-align: left; font-weight: 500; font-size: 18pt;">BNI</h5>
-                            <h6 style="text-align: left;  font-weight: 300;">BNI adalah blablablabla</h6>
-                        </div>
-                        <div class="col-sm-3">
-                            <img src="img/bni.png" alt="bca-logo" width="110%">
-                        </div>
-                        <div class="col-sm-1" style="margin-top: 20px;">
-                            <img src="img/go.png" alt="bca-logo" width="60%">
-                        </div>
-                    </div>
-                    <!-- bank BRI -->
-                    <div class="row" style="border: 2px solid #f1f1f1; border-radius: 20px; background-color: white; text-align: center; padding: 20px; margin-bottom: 15px;">
-                        <div class="col-sm-8">
-                            <h5 style="text-align: left; font-weight: 500; font-size: 18pt;">BRI</h5>
-                            <h6 style="text-align: left;  font-weight: 300;">BRI adalah blablablabla</h6>
-                        </div>
-                        <div class="col-sm-3">
-                            <img src="img/bri.jpg" alt="bca-logo" width="110%">
-                        </div>
-                        <div class="col-sm-1" style="margin-top: 20px;">
-                            <img src="img/go.png" alt="bca-logo" width="60%">
-                        </div>
-                    </div>
-                    <!-- bank Mandiri -->
-                    <div class="row" style="border: 2px solid #f1f1f1; border-radius: 20px; background-color: white; text-align: center; padding: 20px; margin-bottom: 15px;">
-                        <div class="col-sm-8">
-                            <h5 style="text-align: left; font-weight: 500; font-size: 18pt;">Mandiri</h5>
-                            <h6 style="text-align: left;  font-weight: 300;">Mandiri adalah blablablabla</h6>
-                        </div>
-                        <div class="col-sm-3">
-                            <img src="img/mandiri.png" alt="bca-logo" width="110%" style="border-radius: 10px;">
-                        </div>
-                        <div class="col-sm-1" style="margin-top: 20px;">
-                            <img src="img/go.png" alt="next" width="60%">
-                        </div>
-                    </div>
+                    <br>
 
+                    <!-- Virtual Account -->
+                    <div class="row" style="border: 2px solid #f1f1f1; border-radius: 20px; background-color: white; text-align: center; padding: 20px; margin-bottom: 15px;">
+                        <div class="col-sm-9">
+                            <h5 style="text-align: left; font-weight: 500; font-size: 15pt;">Virtual Account Number</h5>
+                            <h6 style="text-align: left;  font-weight: 300; font-size: 17pt; margin-top: 7px;">0000-000000000000</h6>
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" style="background-color: white; color: crimson; font-size: 15pt; border-color: white; margin-top: 10px;" class="col-md-8 btn btn-danger btn-lg rounded-16 mb-3">copy</button>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!-- Cara Pembayaran -->
+                    <div class="row" style="border: 2px solid #f1f1f1; border-radius: 20px; background-color: white; text-align: center; padding: 20px; margin-bottom: 15px;">
+                        <p style="text-align: left; font-weight: 500; font-size: 15pt;">Cara Pembayaran</p>
+                        <button type="button" class="collapsible" style="background-color: whitesmoke; color: black;">ATM</button>
+                        <div class="content" style="border-radius: 20px; padding: 15px; background-color: white; margin-bottom: 7px;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <button type="button" class="collapsible" style="background-color: whitesmoke; color: black;">Mobile Banking</button>
+                        <div class="content" style="border-radius: 20px; padding: 15px; background-color: white; margin-bottom: 7px;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <button type="button" class="collapsible" style="background-color: whitesmoke; color: black;">Internet Banking</button>
+                        <div class="content" style="border-radius: 20px; padding: 15px; background-color: white; margin-bottom: 7px;">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+
+                        <script>
+                            var coll = document.getElementsByClassName("collapsible");
+                            var i;
+
+                            for (i = 0; i < coll.length; i++) {
+                                coll[i].addEventListener("click", function() {
+                                    this.classList.toggle("active");
+                                    var content = this.nextElementSibling;
+                                    if (content.style.display === "block") {
+                                        content.style.display = "none";
+                                    } else {
+                                        content.style.display = "block";
+                                    }
+                                });
+                            }
+                        </script>
+                    </div>
 
 
                     <!-- bagian kanan -->
