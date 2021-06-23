@@ -42,7 +42,7 @@
                       <a id="red" class="navbar-brand" href="/index.html"><img src="/img/icon.png" alt="logo" style="width:40px;"> <b>TariNika</b></a>
                       <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Bantuan</a>
+                        <a class="nav-link" href="/keranjang.html">Keranjang</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#">Daftar</a>
@@ -108,8 +108,28 @@
             </div>
                 <div class="row mt-0 mb-5 mx-auto">
                     <div class="col-md-8 mx-auto">
-                            <button class="col-md-5 me-1 btn btn-lg btn-outline-danger btn-block rounded-8">Masukkan Ke Keranjang</button>
+                            <button class="col-md-5 me-1 btn btn-lg btn-outline-danger btn-block rounded-8" data-bs-toggle="modal" data-bs-target="#keranjang">Masukkan Ke Keranjang</button>
                             <a href="pembayaran.html"><button class="col-md-6 ms-1 btn btn-lg btn-danger btn-block rounded-8" >Bayar Tiket</button></a>
+                                     <!-- Modal -->
+                                          <div class="modal fade my-5" id="keranjang" tabindex="-1" aria-labelledby="keranjang" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                              <div class="modal-content">
+                        
+                                                <div class="modal-header">
+                                                  <img class="modal-title mx-auto" id="keranjang" src="/img/keranjang-success.png">
+                                                 
+                                                </div>
+                                                <div class="modal-body">
+                                                  <h5 class="text-success">Pesanan berhasil dimasukkan ke keranjang!</h5>
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-outline-danger " data-bs-dismiss="modal">Batal</button>
+                                                  <a href="keranjang.html"><button type="button" class="btn btn-danger">Lihat Keranjang</button></a>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      <!--end of modal-->
                     </div>
                    
               </div>
@@ -138,6 +158,8 @@
           <p class="text-center">Prototipe Tugas RBPL | Oleh kelompok 1 RBPL Kelas B</p>
         </div>
       </footer>
+    
+
   <!--END FOOTER-->
 
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
